@@ -38,7 +38,7 @@ public abstract class Avion extends JLabel {
     
     public void detruire() {
         delaiDeTir.stop(); deplacer.interrupt();
-        Explossion boom=new Explossion(x, y+10);
+        Explossion boom=new Explossion(x, y + 10);
         boom.start();
         InterfaceDuJeu.jeu.terainDeJeu.remove(this);
         InterfaceDuJeu.jeu.terainDeJeu.repaint();
